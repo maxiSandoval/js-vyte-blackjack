@@ -1,5 +1,4 @@
-import _ from 'underscore';
-import { crearDeck, valorCarta, perdirCarta, turnoMaquina, acumularPuntos, crearCarta } from './usecases'
+import { crearDeck, perdirCarta, turnoMaquina, acumularPuntos, crearCarta } from './usecases'
 
 /**
  * 
@@ -41,8 +40,6 @@ const miModulo = (() => {
 
         btnDetener.disabled = false;
         btnPedir.disabled = false;
-
-
     }
 
     // Eventos

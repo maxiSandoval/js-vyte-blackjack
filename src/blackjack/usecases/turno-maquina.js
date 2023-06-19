@@ -26,14 +26,13 @@ export const turnoMaquina = (puntosMinimos, deck, puntosJugadores, puntosHtml, d
 
     } while ((puntosMaquina < puntosMinimos) && (puntosMinimos <= 21));
 
-
-
-
+    
     const determinarGanador = () => {
 
         const [puntosMinimos, puntosMaquina] = puntosJugadores;
 
         setTimeout(() => {
+            //Esto se puede optimizar
             if (puntosMaquina === puntosMinimos) {
                 alert('Empate :(')
             } else if (puntosMinimos > 21) {
@@ -46,5 +45,6 @@ export const turnoMaquina = (puntosMinimos, deck, puntosJugadores, puntosHtml, d
         }, 100);
 
     }
+
     determinarGanador();
 }
